@@ -2,7 +2,7 @@
 
 Portfólio pessoal de **Douglas Pfeiffer** — Full-Stack Developer & LLM Agent Specialist.
 
-🌐 **Live**: https://profileowner.reparadone.com/
+🌐 **Live**: https://dips.reparadone.com/
 
 ## Stack
 
@@ -99,14 +99,14 @@ Este projeto está configurado para deploy na **Vercel**:
 2. Framework preset: **Vite**
 3. Build command: `npm run build`
 4. Output directory: `dist`
-5. Configurar domínio customizado `profileowner.reparadone.com`
+5. Configurar domínio customizado `dips.reparadone.com`
 
 ### DNS para o subdomínio
 
 Configure no seu provedor DNS um registro CNAME:
 
 ```
-profileowner.reparadone.com  →  cname.vercel-dns.com
+dips.reparadone.com  →  cname.vercel-dns.com
 ```
 
 ## Performance & SEO

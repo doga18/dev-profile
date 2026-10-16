@@ -69,7 +69,7 @@ Compress-Archive -Path "F:\NodeJs\Fellow\dev-profile\*" -DestinationPath "$env:U
 
 Me avise que eu:
 - Marco o deploy como concluído na documentação
-- Adiciono o link `https://profileowner.reparadone.com` ao README e ao `doga18/doga18` (perfil)
+- Adiciono o link `https://dips.reparadone.com` ao README e ao `doga18/doga18` (perfil)
 - Atualizo a próxima sessão para focar no deploy Vercel + DNS
 
 ---
