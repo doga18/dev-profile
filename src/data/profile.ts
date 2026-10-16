@@ -21,7 +21,7 @@ export interface Project {
   highlights: string[]
   tech: string[]
   url?: string
-  status: 'em desenvolvimento' | 'protótipo' | 'em produção'
+  status: 'em desenvolvimento' | 'protótipo' | 'pré-produção' | 'em produção'
 }
 
 export interface Experience {
@@ -99,6 +99,34 @@ export const stack: StackBadge[] = [
 ]
 
 export const projects: Project[] = [
+  {
+    name: 'FlowDelivery',
+    tagline: 'Plataforma multi-tenant white-label de gestão de entregas',
+    description:
+      'SaaS B2B de logística com três superfícies: API REST, dashboard web e app mobile. Cadastro de pedidos, atribuição de entregadores e rastreamento em tempo real. Desenvolvido com orquestração multi-agente (OpenCode + MCP + RAG).',
+    highlights: [
+      '3 superfícies: API + dashboard + app (Android/iOS)',
+      'Multi-tenant white-label com isolamento por tenant e RBAC com overrides',
+      'WhatsApp por tenant via Baileys (QR + sessão persistida em banco)',
+      'Geolocalização com PostGIS + motor de atribuição (oferta com timeout)',
+      'Engenharia de Agentes: orquestrador + subagentes + QA + RAG + memória',
+    ],
+    tech: [
+      'Node.js',
+      'Express',
+      'Sequelize',
+      'PostgreSQL',
+      'PostGIS',
+      'Socket.IO',
+      'React',
+      'TypeScript',
+      'React Native',
+      'Expo',
+      'Tailwind CSS',
+    ],
+    url: 'https://flowdelivery.reparadone.com',
+    status: 'pré-produção',
+  },
   {
     name: 'ReparaDone',
     tagline: 'ERP para assistências técnicas',
