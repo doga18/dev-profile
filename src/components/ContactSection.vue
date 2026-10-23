@@ -41,8 +41,8 @@ const IconMap = { whatsapp: WhatsAppIcon, mail: Mail, linkedin: Linkedin, github
 <template>
   <section id="contact" class="py-20 px-6 bg-gradient-to-b from-bg-deep to-accent-cyan/5">
     <div class="max-w-4xl mx-auto text-center reveal">
-      <h2 class="reveal text-3xl sm:text-4xl font-bold text-text-primary tracking-tight mb-6">{{ t.contact.lead.heading }}</h2>
-      <p class="reveal text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">{{ t.contact.lead.description }}</p>
+      <h2 class="reveal text-3xl sm:text-4xl font-bold text-text-primary tracking-tight mb-6">{{ t.contact.title }}</h2>
+      <p class="reveal text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">{{ t.contact.subtitle[1] }}</p>
 
       <div class="reveal mt-8 flex flex-wrap justify-center items-center gap-3">
         <a
@@ -59,11 +59,11 @@ const IconMap = { whatsapp: WhatsAppIcon, mail: Mail, linkedin: Linkedin, github
           class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border-strong text-text-primary font-medium hover:border-accent-cyan/50 hover:text-accent-cyan transition-colors"
         >
           <Mail class="h-5 w-5" />
-          {{ t.contact.email.label }}
+          {{ t.contact.email.cta }}
         </a>
       </div>
 
-      <div class="reveal mt-12 text-xs tracking-wide uppercase text-text-muted">Canais de contato</div>
+      <div class="reveal mt-12 text-xs tracking-wide uppercase text-text-muted">{{ t.contact.channelsLabel }}</div>
 
       <div class="reveal grid md:grid-cols-2 gap-4 sm:gap-6 mt-8 max-w-3xl mx-auto">
         <a
@@ -78,7 +78,7 @@ const IconMap = { whatsapp: WhatsAppIcon, mail: Mail, linkedin: Linkedin, github
             <component :is="IconMap[ch.icon]" :size="24" />
           </div>
           <div class="flex-1 text-left">
-            <p class="text-xs uppercase tracking-wider text-text-muted">{{ t.contact.channels.label }}</p>
+            <p class="text-xs uppercase tracking-wider text-text-muted">{{ t.contact.channelsLabel }}</p>
             <p class="text-sm font-medium text-text-primary group-hover:text-accent-cyan transition-colors">{{ ch.label }}</p>
           </div>
           <ArrowUpRight :size="18" class="text-text-muted self-center text-opacity-50 group-hover:text-accent-cyan group-hover:text-opacity-100 transition-all" />
@@ -96,7 +96,7 @@ const IconMap = { whatsapp: WhatsAppIcon, mail: Mail, linkedin: Linkedin, github
             <component :is="IconMap[ch.icon]" :size="24" />
           </div>
           <div class="flex-1 text-left">
-            <p class="text-xs uppercase tracking-wider text-text-muted">{{ t.contact.channels.label }}</p>
+            <p class="text-xs uppercase tracking-wider text-text-muted">{{ t.contact.channelsLabel }}</p>
             <p class="text-sm font-medium text-text-primary group-hover:text-accent-purple transition-colors">{{ ch.label }}</p>
           </div>
           <ArrowUpRight :size="18" class="text-text-muted self-center text-opacity-50 group-hover:text-accent-purple group-hover:text-opacity-100 transition-all" />
@@ -104,7 +104,7 @@ const IconMap = { whatsapp: WhatsAppIcon, mail: Mail, linkedin: Linkedin, github
       </div>
 
       <footer class="reveal mt-12 pt-8 border-t border-border-subtle">
-        <p class="text-sm text-text-muted">{{ t.contact.footer }}</p>
+        <p class="text-sm text-text-muted">{{ t.footer.rights }}</p>
       </footer>
     </div>
   </section>
