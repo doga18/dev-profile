@@ -1,22 +1,20 @@
 <script setup lang="ts">
-import { profile } from '../data/profile'
 import { MapPin, Mail, Briefcase, Sparkles } from 'lucide-vue-next'
 import SectionTitle from './SectionTitle.vue'
+import { useI18n } from '../i18n'
+
+const { t } = useI18n()
 </script>
 
 <template>
   <section id="about" class="py-20 px-6">
     <div class="max-w-5xl mx-auto">
-      <SectionTitle
-        label="// 01"
-        title="Sobre mim"
-        subtitle="Quem está por trás do código"
-      />
+      <SectionTitle :label="t.about.label" :title="t.about.title" :subtitle="t.about.subtitle" />
 
       <div class="grid md:grid-cols-3 gap-6 mt-12">
         <div class="reveal md:col-span-2 space-y-4">
           <p
-            v-for="(paragraph, idx) in profile.intro"
+            v-for="(paragraph, idx) in t.about.paragraphs"
             :key="idx"
             class="text-lg leading-relaxed text-text-secondary"
           >
@@ -25,7 +23,7 @@ import SectionTitle from './SectionTitle.vue'
 
           <div class="pt-4 flex items-start gap-2 text-sm text-text-muted">
             <Sparkles class="text-accent-cyan mt-0.5 shrink-0" :size="16" />
-            <span>{{ profile.status }}</span>
+            <span>{{ t.about.status }}</span>
           </div>
         </div>
 
@@ -34,8 +32,8 @@ import SectionTitle from './SectionTitle.vue'
             <div class="flex items-center gap-3 text-text-secondary">
               <Briefcase class="text-accent-cyan shrink-0" :size="18" />
               <div>
-                <p class="text-xs uppercase tracking-wider text-text-muted">Atuação</p>
-                <p class="text-sm font-medium text-text-primary mt-1">Code7 / Ligo</p>
+                <p class="text-xs uppercase tracking-wider text-text-muted">{{ t.about.workLabel }}</p>
+                <p class="text-sm font-medium text-text-primary mt-1">{{ t.about.workValue }}</p>
               </div>
             </div>
           </div>
@@ -44,8 +42,8 @@ import SectionTitle from './SectionTitle.vue'
             <div class="flex items-center gap-3 text-text-secondary">
               <MapPin class="text-accent-purple shrink-0" :size="18" />
               <div>
-                <p class="text-xs uppercase tracking-wider text-text-muted">Localização</p>
-                <p class="text-sm font-medium text-text-primary mt-1">{{ profile.location }}</p>
+                <p class="text-xs uppercase tracking-wider text-text-muted">{{ t.about.locationLabel }}</p>
+                <p class="text-sm font-medium text-text-primary mt-1">{{ t.about.locationValue }}</p>
               </div>
             </div>
           </div>
@@ -54,12 +52,12 @@ import SectionTitle from './SectionTitle.vue'
             <div class="flex items-center gap-3 text-text-secondary">
               <Mail class="text-accent-emerald shrink-0" :size="18" />
               <div>
-                <p class="text-xs uppercase tracking-wider text-text-muted">Email</p>
+                <p class="text-xs uppercase tracking-wider text-text-muted">{{ t.about.emailLabel }}</p>
                 <a
-                  :href="`mailto:${profile.email}`"
+                  :href="t.contact.email.href"
                   class="text-sm font-medium text-text-primary hover:text-accent-cyan transition-colors block mt-1 break-all"
                 >
-                  {{ profile.email }}
+                  {{ t.about.emailValue }}
                 </a>
               </div>
             </div>
