@@ -86,7 +86,7 @@ const education = [
 </script>
 
 <template>
-  <div class="min-h-screen bg-bg-deep py-8 px-4 md:px-8 print:bg-white print:py-0 print:px-0">
+  <div class="min-h-screen bg-bg-deep pt-28 pb-12 px-4 md:px-8 print:bg-white print:pt-0 print:pb-0 print:px-0">
     <div class="max-w-6xl mx-auto">
       
       <!-- Barra de Ações (Escondida na impressão) -->
