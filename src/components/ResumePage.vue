@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { Printer, ArrowLeft } from 'lucide-vue-next'
 
 const printResume = () => {
