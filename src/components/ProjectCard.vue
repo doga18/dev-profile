@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { ArrowUpRight, CheckCircle2, Code2 } from 'lucide-vue-next'
-import type { Project } from '../data/profile'
+import { useI18n } from '../i18n'
+import type { Project } from '../i18n/types'
 
 defineProps<{
   project: Project
   featured?: boolean
 }>()
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -42,7 +45,7 @@ defineProps<{
         ]"
       >
         <span class="h-1.5 w-1.5 rounded-full bg-accent-amber animate-pulse"></span>
-        {{ project.status }}
+        {{ t.projects.statuses[project.status] }}
       </span>
     </header>
 
@@ -80,7 +83,7 @@ defineProps<{
           featured ? 'text-accent-cyan hover:text-accent-cyan-deep' : 'text-accent-purple hover:text-accent-purple-deep',
         ]"
       >
-        Ver projeto
+        {{ t.projects.visit }}
         <ArrowUpRight :size="16" />
       </a>
     </footer>

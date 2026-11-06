@@ -13,6 +13,7 @@ export const en: Dict = {
     projects: 'Projects',
     experience: 'Experience',
     contact: 'Contact',
+    resume: 'Resume',
     cta: 'Get in touch',
     menuOpen: 'Open menu',
     menuClose: 'Close menu',
@@ -236,5 +237,129 @@ export const en: Dict = {
     rights: 'All rights reserved.',
     madeWith: 'Made with',
     builtWith: 'Vue 3 · TypeScript · Tailwind CSS',
+  },
+
+  resume: {
+    back: 'Back',
+    print: 'Export to PDF',
+    contact: {
+      location: 'Garopaba – SC, Brazil',
+      phone: '+55 48 99656-5947',
+      email: 'douglas17_serafim@hotmail.com',
+    },
+    highlights: ['Node.js', 'React', 'Python', 'Django', 'PostgreSQL', 'MCP', 'Docker', 'Linux'],
+    objectiveTitle: 'Career Objective',
+    objective:
+      'Full-Stack Engineer & LLM Agent Specialist with 4+ years combining critical Linux infrastructure and real SaaS products. Creator of ReparaDone (multi-tenant ERP) and Lua Prospect (B2B prospecting). Focused on LLM Agent Engineering, Model Context Protocol (MCP), RAG and web automations that accelerate development and career growth.',
+    profileTitle: 'Professional Profile',
+    profile:
+      'Backend/Full-Stack developer specialized in implementing solutions with Agents and LLMs. I work as an Implementation Analyst at Code7/Ligo, dealing with production servers, automation (Bash, Ansible, Python), VoIP (Asterisk) and advanced SQL (MySQL/MSSQL). I am the developer of ReparaDone — an ERP for repair shops in development, with multi-tenant architecture, payment gateway integration, 2FA, an ECU module for automotive keys and over 700 automated tests. I also built Lua Prospect, a B2B prospecting platform with WhatsApp via QR Code and Google Calendar integration.',
+    experienceTitle: 'Professional Experience',
+    experience: [
+      {
+        role: 'Implementation Analyst',
+        company: 'Code7 / Ligo',
+        period: 'Feb 2021 – present (3+ years)',
+        description:
+          'Deployment, administration and optimization of Linux servers in highly available production environments.',
+        highlights: [
+          'Automation of operational routines with Bash, Ansible and Python.',
+          'Configuration and maintenance of Asterisk (SIP/E1) solutions for corporate VoIP.',
+          'Data analysis and manipulation in MySQL, MSSQL and PostgreSQL.',
+          'Advanced technical support for critical systems during production incidents.',
+          'Close collaboration with product and development teams, applying AI to operational automation.',
+        ],
+      },
+      {
+        role: 'Technical Support Analyst',
+        company: 'iBridge Technology',
+        period: 'Feb 2018 – Mar 2021 (3 years)',
+        description: 'Monitoring and support of cloud systems and infrastructure.',
+        highlights: [
+          'Log analysis, incident investigation and application failure diagnosis.',
+          'Technical support and assistance in system deployment processes.',
+          'Ticket triage and escalation focused on SLA and customer satisfaction.',
+        ],
+      },
+    ],
+    educationTitle: 'Education',
+    education: [
+      {
+        degree: 'Associate Degree in Systems Analysis and Development',
+        period: '2019 – 2024',
+        institution: 'Universidade Cesumar (UniCesumar)',
+        note: 'Undergraduate degree in ADS, emphasizing web programming, databases and Linux infrastructure.',
+      },
+      {
+        degree: 'Postgraduate Degree in Python Development',
+        period: '2024',
+        institution: 'Universidade Cesumar (UniCesumar)',
+      },
+    ],
+    skillsTitle: 'Technical Skills',
+    skills: [
+      {
+        label: 'Frontend & UI/UX',
+        items: [
+          'React.js • TypeScript • Vite 6 • Tailwind CSS 4',
+          'HTML5 • CSS3 • JavaScript ES6+ • React Router 7',
+        ],
+      },
+      {
+        label: 'Backend & APIs',
+        items: [
+          'Node.js • Express • Sequelize • PostgreSQL • MySQL • MSSQL',
+          'Python • Django • Flask • FastAPI • REST API • GraphQL',
+        ],
+      },
+      {
+        label: 'DevOps, Infra & Cloud',
+        items: [
+          'Docker • Linux (Ubuntu/CentOS) • Git • GitHub Actions',
+          'AWS (EC2, S3, RDS) • Nginx • Bash • Ansible • Python Scripts',
+        ],
+      },
+      {
+        label: 'Artificial Intelligence & Agents',
+        items: [
+          'Model Context Protocol (MCP) • RAG • LangChain • AutoGen',
+          'Ollama • HuggingFace • Groq API • OpenRouter',
+        ],
+      },
+      {
+        label: 'Databases & Analysis',
+        items: [
+          'PostgreSQL • MySQL • MongoDB • Redis • ElasticSearch',
+          'Pandas • NumPy • PySpark • Advanced SQL',
+        ],
+      },
+      {
+        label: 'Tools & Certifications',
+        items: ['Udemy: HTML5, CSS3, JavaScript, Node.js, React, Python, Django, Docker • TargetTrust: Python'],
+      },
+    ],
+    projectsTitle: 'Featured Projects',
+    projects: [
+      {
+        name: 'ReparaDone',
+        meta: 'reparadone.com • multi-tenant ERP',
+        description:
+          'Repair-shop management system with multi-tenant architecture, payment gateway integration (MercadoPago, PagSeguro, Stripe, Asaas), 2FA authentication, ECU module for automotive keys and over 717 passing automated tests.',
+        tech: 'Node.js • React • PostgreSQL • Sequelize • JWT • HMAC Webhooks',
+        url: 'https://reparadone.com',
+      },
+      {
+        name: 'Lua Prospect',
+        meta: 'lua-prospect-nu.vercel.app • B2B Prospecting',
+        description:
+          'B2B prospecting platform with WhatsApp via QR Code, Google Calendar integration and automations for qualified leads. Focused on companies looking to scale sales without growing their sales team.',
+        tech: 'React Native • Expo • WhatsApp QR Code • Google Calendar API',
+        url: 'https://lua-prospect-nu.vercel.app',
+      },
+    ],
+    visit: 'Visit Website',
+    availabilityTitle: 'Open to Opportunities',
+    availability:
+      'I am available for opportunities at AI companies, SaaS product teams or technical consulting where I can apply LLM Agent Engineering to create real impact. Focused on automations that accelerate development and business.',
   },
 }

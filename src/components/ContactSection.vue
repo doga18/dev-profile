@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { Mail, Linkedin, Github, ArrowUpRight } from 'lucide-vue-next'
 import { useI18n } from '../i18n'
 import WhatsAppIcon from './WhatsAppIcon.vue'
@@ -12,28 +13,24 @@ interface Channel {
   icon: 'whatsapp' | 'mail' | 'linkedin' | 'github'
 }
 
-const channels: Channel[] = [
+const channels = computed<Channel[]>(() => [
   {
     ...t.value.contact.whatsapp,
-    href: t.value.contact.whatsapp.href,
     icon: 'whatsapp',
   },
   {
     ...t.value.contact.email,
-    href: t.value.contact.email.href,
     icon: 'mail',
   },
   {
     ...t.value.contact.linkedin,
-    href: t.value.contact.linkedin.href,
     icon: 'linkedin',
   },
   {
     ...t.value.contact.github,
-    href: t.value.contact.github.href,
     icon: 'github',
   },
-]
+])
 
 const IconMap = { whatsapp: WhatsAppIcon, mail: Mail, linkedin: Linkedin, github: Github } as const
 </script>
@@ -42,7 +39,7 @@ const IconMap = { whatsapp: WhatsAppIcon, mail: Mail, linkedin: Linkedin, github
   <section id="contact" class="py-20 px-6 bg-gradient-to-b from-bg-deep to-accent-cyan/5">
     <div class="max-w-4xl mx-auto text-center reveal">
       <h2 class="reveal text-3xl sm:text-4xl font-bold text-text-primary tracking-tight mb-6">{{ t.contact.title }}</h2>
-      <p class="reveal text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">{{ t.contact.subtitle[1] }}</p>
+      <p class="reveal text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">{{ t.contact.subtitle }}</p>
 
       <div class="reveal mt-8 flex flex-wrap justify-center items-center gap-3">
         <a

@@ -42,6 +42,48 @@ export interface ContactChannel {
   handle: string
 }
 
+export interface ResumeEducation {
+  degree: string
+  period: string
+  institution: string
+  note?: string
+}
+
+export interface ResumeSkillGroup {
+  label: string
+  items: string[]
+}
+
+export interface ResumeProject {
+  name: string
+  meta: string
+  description: string
+  tech: string
+  url: string
+}
+
+export interface Resume {
+  back: string
+  print: string
+  contact: { location: string; phone: string; email: string }
+  highlights: string[]
+  objectiveTitle: string
+  objective: string
+  profileTitle: string
+  profile: string
+  experienceTitle: string
+  experience: Experience[]
+  educationTitle: string
+  education: ResumeEducation[]
+  skillsTitle: string
+  skills: ResumeSkillGroup[]
+  projectsTitle: string
+  projects: ResumeProject[]
+  visit: string
+  availabilityTitle: string
+  availability: string
+}
+
 export interface Dict {
   meta: {
     title: string
@@ -53,6 +95,7 @@ export interface Dict {
     projects: string
     experience: string
     contact: string
+    resume: string
     cta: string
     menuOpen: string
     menuClose: string
@@ -125,4 +168,5 @@ export interface Dict {
     madeWith: string
     builtWith: string
   }
+  resume: Resume
 }

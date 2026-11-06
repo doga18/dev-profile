@@ -67,7 +67,7 @@ function handleNav(id: string) {
               to="/resume"
               class="text-sm text-text-secondary hover:text-accent-cyan transition-colors duration-200"
             >
-              Currículo
+              {{ t.nav.resume }}
             </router-link>
           </li>
         </ul>
@@ -113,6 +113,15 @@ function handleNav(id: string) {
             >
               {{ link.label }}
             </a>
+          </li>
+          <li>
+            <router-link
+              to="/resume"
+              class="block py-2 text-text-secondary hover:text-accent-cyan transition-colors"
+              @click="isOpen = false"
+            >
+              {{ t.nav.resume }}
+            </router-link>
           </li>
           <li class="pt-2">
             <a

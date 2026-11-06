@@ -13,6 +13,7 @@ export const pt: Dict = {
     projects: 'Projetos',
     experience: 'Experiência',
     contact: 'Contato',
+    resume: 'Currículo',
     cta: 'Falar comigo',
     menuOpen: 'Abrir menu',
     menuClose: 'Fechar menu',
@@ -237,5 +238,129 @@ export const pt: Dict = {
     rights: 'Todos os direitos reservados.',
     madeWith: 'Feito com',
     builtWith: 'Vue 3 · TypeScript · Tailwind CSS',
+  },
+
+  resume: {
+    back: 'Voltar',
+    print: 'Exportar para PDF',
+    contact: {
+      location: 'Garopaba – SC',
+      phone: '(48) 99656-5947',
+      email: 'douglas17_serafim@hotmail.com',
+    },
+    highlights: ['Node.js', 'React', 'Python', 'Django', 'PostgreSQL', 'MCP', 'Docker', 'Linux'],
+    objectiveTitle: 'Objetivo Profissional',
+    objective:
+      'Engenheiro Full-Stack & LLM Agent Specialist com mais de 4 anos unindo infraestrutura Linux crítica e SaaS reais. Criador do ReparaDone (ERP multi-tenant) e Lua Prospect (B2B prospecção). Foco em Engenharia de Agentes de LLM, Model Context Protocol (MCP), RAG e automações web que aceleram desenvolvimento e carreira.',
+    profileTitle: 'Perfil Profissional',
+    profile:
+      'Desenvolvedor Backend/Full Stack especializado na implementação de soluções com Agentes e LLMs. Atuo como Analista de Implantação na Code7/Ligo, onde trabalho com servidores em produção, automação (Bash, Ansible, Python), VoIP (Asterisk) e SQL avançado (MySQL/MSSQL). Sou o desenvolvedor do ReparaDone — ERP para assistências técnicas em desenvolvimento, com arquitetura multi-tenant, integração de gateways de pagamento, 2FA, módulo ECU de chaves automotivas e mais de 700 testes automatizados. Também desenvolvi o Lua Prospect, plataforma B2B de prospecção com WhatsApp via QR Code e integração Google Calendar.',
+    experienceTitle: 'Experiência Profissional',
+    experience: [
+      {
+        role: 'Analista de Implantação',
+        company: 'Code7 / Ligo',
+        period: 'fev/2021 – presente (3+ anos)',
+        description:
+          'Implantação, administração e otimização de servidores Linux em ambientes produtivos de alta disponibilidade.',
+        highlights: [
+          'Automação de rotinas operacionais com Bash, Ansible e Python.',
+          'Configuração e manutenção de soluções Asterisk (SIP/E1) para VoIP corporativo.',
+          'Análise e manipulação de dados em MySQL, MSSQL e PostgreSQL.',
+          'Suporte técnico avançado a sistemas críticos em incidentes de produção.',
+          'Atuação próxima a times de produto e desenvolvimento, aplicando IA para automações operacionais.',
+        ],
+      },
+      {
+        role: 'Analista de Suporte Técnico',
+        company: 'iBridge Technology',
+        period: 'fev/2018 – mar/2021 (3 anos)',
+        description: 'Monitoramento e suporte a sistemas em nuvem e infraestrutura.',
+        highlights: [
+          'Análise de logs, incidentes e falhas de aplicação.',
+          'Atendimento técnico e apoio a processos de implantação de sistemas.',
+          'Triagem e escalonamento de chamados com foco em SLA e satisfação do cliente.',
+        ],
+      },
+    ],
+    educationTitle: 'Formação Acadêmica',
+    education: [
+      {
+        degree: 'Tecnólogo em Análise e Desenvolvimento de Sistemas',
+        period: '2019 – 2024',
+        institution: 'Universidade Cesumar (UniCesumar)',
+        note: 'Graduação em ADS, com ênfase em programação web, banco de dados e infraestrutura Linux.',
+      },
+      {
+        degree: 'Pós-Graduação em Desenvolvimento Python',
+        period: '2024',
+        institution: 'Universidade Cesumar (UniCesumar)',
+      },
+    ],
+    skillsTitle: 'Habilidades Técnicas',
+    skills: [
+      {
+        label: 'Frontend & UI/UX',
+        items: [
+          'React.js • TypeScript • Vite 6 • Tailwind CSS 4',
+          'HTML5 • CSS3 • JavaScript ES6+ • React Router 7',
+        ],
+      },
+      {
+        label: 'Backend & APIs',
+        items: [
+          'Node.js • Express • Sequelize • PostgreSQL • MySQL • MSSQL',
+          'Python • Django • Flask • FastAPI • REST API • GraphQL',
+        ],
+      },
+      {
+        label: 'DevOps, Infra e Cloud',
+        items: [
+          'Docker • Linux (Ubuntu/CentOS) • Git • GitHub Actions',
+          'AWS (EC2, S3, RDS) • Nginx • Bash • Ansible • Python Scripts',
+        ],
+      },
+      {
+        label: 'Inteligência Artificial & Agentes',
+        items: [
+          'Model Context Protocol (MCP) • RAG • LangChain • AutoGen',
+          'Ollama • HuggingFace • Groq API • OpenRouter',
+        ],
+      },
+      {
+        label: 'Bancos de Dados e Análise',
+        items: [
+          'PostgreSQL • MySQL • MongoDB • Redis • ElasticSearch',
+          'Pandas • NumPy • PySpark • SQL Avançado',
+        ],
+      },
+      {
+        label: 'Ferramentas e Certificações',
+        items: ['Udemy: HTML5, CSS3, JavaScript, Node.js, React, Python, Django, Docker • TargetTrust: Python'],
+      },
+    ],
+    projectsTitle: 'Projetos em Destaque',
+    projects: [
+      {
+        name: 'ReparaDone',
+        meta: 'reparadone.com • ERP multi-tenant',
+        description:
+          'Sistema de gestão para assistências técnicas com arquitetura multi-tenant, integração de gateways de pagamento (MercadoPago, PagSeguro, Stripe, Asaas), autenticação 2FA, módulo ECU para chaves automotivas e mais de 717 testes automatizados verdes.',
+        tech: 'Node.js • React • PostgreSQL • Sequelize • JWT • Webhooks HMAC',
+        url: 'https://reparadone.com',
+      },
+      {
+        name: 'Lua Prospect',
+        meta: 'lua-prospect-nu.vercel.app • Prospecção B2B',
+        description:
+          'Plataforma B2B de prospecção com WhatsApp via QR Code, integração Google Calendar e automações para leads qualificados. Foco em empresas que buscam escalar vendas sem aumentar equipe comercial.',
+        tech: 'React Native • Expo • WhatsApp QR Code • Google Calendar API',
+        url: 'https://lua-prospect-nu.vercel.app',
+      },
+    ],
+    visit: 'Visitar Site',
+    availabilityTitle: 'Em Busca de Oportunidades',
+    availability:
+      'Estou disponível para oportunidades em empresas de IA, times de produto SaaS ou consultoria técnica onde eu possa aplicar Engenharia de Agentes e LLMs para gerar impacto real. Foco em automações que aceleram desenvolvimento e negócios.',
   },
 }

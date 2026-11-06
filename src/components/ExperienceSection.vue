@@ -1,17 +1,15 @@
 <script setup lang="ts">
-import { experiences } from '../data/profile'
+import { useI18n } from '../i18n'
 import SectionTitle from './SectionTitle.vue'
 import { Briefcase } from 'lucide-vue-next'
+
+const { t } = useI18n()
 </script>
 
 <template>
   <section id="experience" class="py-20 px-6">
     <div class="max-w-5xl mx-auto">
-      <SectionTitle
-        label="// 04"
-        title="Experiência"
-        subtitle="Trajetória profissional"
-      />
+      <SectionTitle :label="t.experience.label" :title="t.experience.title" :subtitle="t.experience.subtitle" />
 
       <div class="relative mt-12 space-y-6">
         <!-- Vertical timeline line -->
@@ -21,7 +19,7 @@ import { Briefcase } from 'lucide-vue-next'
         ></div>
 
         <article
-          v-for="(exp, idx) in experiences"
+          v-for="(exp, idx) in t.experience.items"
           :key="`${exp.company}-${idx}`"
           class="reveal relative pl-12 sm:pl-16"
         >
